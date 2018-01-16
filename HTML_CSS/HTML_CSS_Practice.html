@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML AND CSS</title>
+
+    <style type="text/css">
+        .wrapper {
+            width: 1000px;
+            height: 1000px;
+            margin: 0px;
+            border: 20px solid #4372d1;
+            background-color: dodgerblue;
+        }
+
+        .square {
+            width: 500px;
+            height: 500px;
+            margin: 0;
+            font: 28px "Arial", "Zapfino", cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .squareUpperLeft {
+            float: left;
+            background-color: chartreuse;
+        }
+
+        .squareUpperRight {
+            float: right;
+            background-color: white;
+            -webkit-text-fill-color: blue;
+        }
+
+        .squareLowerLeft {
+            float: left;
+            background-color: black;
+            -webkit-text-fill-color: chartreuse;
+        }
+
+        .squareLowerRight {
+            float: right;
+            background-color: blue;
+            -webkit-text-fill-color: white;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class=" square squareUpperLeft">
+            <p>
+                This is an upper-left square
+            </p>
+        </div>
+
+        <div class="square squareUpperRight">
+            <p>
+                This is an upper-right square
+            </p>
+        </div>
+
+        <div class=" square squareLowerLeft">
+            <p>
+                This is a lower-left square
+            </p>
+        </div>
+
+        <div class="square squareLowerRight">
+            <p>
+                This is a lower-right square
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
