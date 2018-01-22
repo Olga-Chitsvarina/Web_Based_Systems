@@ -1,9 +1,92 @@
+/*
+==================================================================================
+DEFAULTS:
+ */
+body {
+    margin: 0;                          /* Removes space around body elements*/
+    background: #ccc;                   /* Fill the web-page with color */
+    width: 100%;
+    height: 100%;
+}
 
-.header-navigation-bar{
+a{
+    color: #ccc;
+    font-family: sans-serif;
+    text-decoration: none;              /* Remove link underline */
+    padding: 20px;
+}
+
+a:hover{
+    color: #0099ff;
+}
+
+#current{
+    color: #0099ff;
+    border-bottom: 20px solid #0099ff;
+    border-bottom-style: groove ;
+}
+/*
+==================================================================================
+HEADER:
+ */
+.header-nav-bar{
+    margin: 0;
     background-color: #4f4f4f;
     height: 100px;
+    width: 100%;
+    box-shadow: 0px 8px 15px rgba(15, 21, 46, 0.65);
 }
 
-.header-navigation-link-unselected{
-    color: white;
+#header-nav-logo{
+    float: left;
 }
+
+.header-nav-bar ul{
+    list-style-type: none;              /* Removes bullets */
+    display: inline-block;              /* Display list in one line */
+    line-height: 70px;                  /* Height of nav buttons bar*/
+}
+
+.header-nav-bar li {
+    display: inline;
+    padding: 20px;                 /* Space between buttons */
+}
+
+/*
+==================================================================================
+MAIN SECTION:
+ */
+
+.text-section{
+    width: 500px;
+    height: 500px;
+    color: #4f4f4f;
+    font-family: sans-serif;
+    font-size: x-large;
+    background-color: red;
+}
+
+.picture{
+    margin:0;
+    width: 100px;
+    height: auto;
+    float:right;
+}
+
+/*===================================================================================
+BOTTOM BAR:
+ */
+
+.bottom-bar{
+
+    color: #ccc;
+    background-color: #4f4f4f;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+}
+
+
+
+
