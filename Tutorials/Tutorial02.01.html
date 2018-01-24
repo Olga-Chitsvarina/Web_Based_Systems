@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Page Layout</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #ccc;
+            fonnt-size: 14px;
+            font-family: Arial;
+        }
+
+        #header{
+            background-color: #376092;
+            height: 50px;
+        }
+
+        .container{
+            width: 800px;
+            margin: 0 auto /* top and bottom are 0, auto for left and right, centre 800 px content*/
+        }
+
+        #logo{
+            color: white;
+            font-size: 16px;
+            padding-top: 15px;
+            font-weight:bold;
+        }
+
+        #menu{
+            float:right;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li{ /*style li that are inside the menu*/
+            display: inline-block; /* makes them to look horigzontal*/
+            padding-top: 15px;
+            margin-left: 20px;
+        }
+
+        #menu li a{
+            color: white;
+            text-decoration: none; /* removes underline */
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div id="logo">SENG Website</div>
+        </div>
+    </div>
+
+</body>
+</html>
