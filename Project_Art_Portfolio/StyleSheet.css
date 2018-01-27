@@ -1,0 +1,658 @@
+/*
+==================================================================================
+DEFAULTS FOR ALL:
+ */
+*{
+   box-sizing: border-box;
+}
+
+body {
+    margin: 0;                          /* Removes space around body elements*/
+    background: #ccc;                   /* Fill the web-page with color */
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: #ccc;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 20px;
+}
+
+a:hover{
+    color: #0099ff;
+}
+
+.current{
+    color: #0099ff;
+    border-bottom: 20px groove #0099ff;
+}
+
+/* DEFAULTS .row section was defined based on: https://css-tricks.com/snippets/css/clear-fix/:*/
+.row {
+    display: block;
+}
+
+.row:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+table {
+    margin-left: 17%;
+    margin-right: 17%;
+    width: 64%;
+
+    border-collapse: collapse;
+    border: 1px solid black;
+
+    font-family: sans-serif;
+}
+
+table td, th {
+    text-align: center;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #acacac;
+}
+
+table tr:nth-child(odd) {
+    background-color: #939393;
+}
+
+table a{
+    color: #4f4f4f;
+
+}
+
+table a:hover{
+    color: black;
+}
+
+.table-header{
+    color: #4f4f4f;
+}
+
+
+/*
+==================================================================================
+MAIN-HEADER:
+ */
+.header{
+    margin-bottom: 10px;
+    box-shadow: 0 8px 15px rgba(15, 21, 46, 0.65);
+}
+
+.inner-header{
+    background-color: #4f4f4f;
+    min-height: 100px;
+    width: 100%;
+}
+
+#header-nav-logo{
+    float: left;
+}
+
+.header ul{
+    list-style-type: none;              /* Removes bullets */
+    display: inline-block;              /* Display list in one line */
+    line-height: 70px;                  /* Height of nav buttons bar*/
+}
+
+.header li {
+    padding: 20px;
+    margin: 0;
+    display: inline;
+}
+
+/*
+==================================================================================
+MAIN-CONTENT-LEFT:
+ */
+
+.main-content-first{
+    margin:0;
+    padding-left: 10px;
+    width: 50%;
+    float:left;
+}
+
+.main-inner-content-first{
+    margin:0;
+    min-height: 550px;
+
+    background-color: #4f4f4f;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: x-large;
+
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border: 10px solid white;
+}
+
+.main-inner-content-first-text{
+    padding: 8%;
+}
+
+.main-inner-content-first-text strong{
+    color: #0099ff;
+}
+
+/*
+==================================================================================
+MAIN-CONTENT-RIGHT:
+ */
+.main-content-second{
+    margin:0;
+    width: 50%;
+    float:left;
+}
+
+.main-inner-content-second{
+    min-height: 550px;
+}
+
+.main-inner-content-second img{
+    height: 550px;
+    padding-left: 140px;
+
+}
+
+/*===================================================================================
+MAIN-BOTTOM BAR:
+ */
+.footer{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inner-footer{
+    min-height: 60px;
+    color: #ccc;
+    background-color: #4f4f4f;
+    text-align: center;
+}
+
+.inner-footer-text{
+    padding: 23px;
+    font-family: sans-serif;
+}
+
+/*************************************************************************************/
+/*************************************************************************************/
+/* PAINTINGS-HEADER*/
+.paintings-header{
+    margin: 10px;
+}
+
+.paintings-inner-header{
+    min-height: 100px;
+    background-color: #4f4f4f;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.paintings-inner-header h3{
+    color: #0099ff;
+}
+
+.paintings-inner-header p{
+    color: white;
+}
+
+
+/*============================================================================*/
+/* PAINTINGS-CONTENT 11-12: */
+
+.paintings-content-11{
+    width: 50%;
+    float: left;
+}
+
+.paintings-inner-content-11{
+    margin-left:10px;
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #4f4f4f;
+
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.paintings-content-12{
+    width: 50%;
+    float:left;
+}
+
+.paintings-inner-content-12{
+    min-height: 550px;
+}
+
+.paintings-inner-content-12 img{
+    height: 550px;
+    padding: 10px 10px 10px 140px;
+
+}
+
+/*======================================================*/
+/* PAINTINGS CONTENT 21-22 */
+#painting{
+    background-color: #4f4f4f;
+}
+.paintings-content-21{
+    margin-top:10px;
+    width: 50%;
+    float:left;
+
+}
+
+.paintings-inner-content-21{
+    margin-left:10px;
+    min-height: 550px;
+}
+
+.paintings-inner-content-21 img{
+    height: 550px;
+    padding: 10px;
+
+}
+
+.paintings-content-22{
+    margin-top: 10px;
+    width: 50%;
+    float: left;
+}
+
+.paintings-inner-content-22{
+
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #ccc;
+
+    text-align: center;
+    padding-top: 225px;
+}
+
+/*************************************************************************************/
+/*************************************************************************************/
+/* GLASS-HEADER*/
+.glass-header{
+    margin: 10px;
+}
+
+.glass-inner-header{
+    min-height: 100px;
+    background-color: #4f4f4f;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.glass-inner-header h3{
+    color: #0099ff;
+}
+
+.glass-inner-header p{
+    color: white;
+}
+/*============================================================================*/
+/* GLASS-CONTENT 11-12: */
+
+.glass-content-11{
+    width: 50%;
+    float: left;
+}
+
+.glass-inner-content-11{
+    margin-left:10px;
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #4f4f4f;
+
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.glass-content-12{
+    width: 50%;
+    float:left;
+}
+
+.glass-inner-content-12{
+    min-height: 550px;
+}
+
+.glass-inner-content-12 img{
+    height: 550px;
+    padding: 10px 10px 10px 140px;
+
+}
+
+/*======================================================*/
+/* GLASS-CONTENT 21-22 */
+#glass{
+    background-color: #4f4f4f;
+}
+.glass-content-21{
+    margin-top:10px;
+    width: 50%;
+    float:left;
+
+}
+
+.glass-inner-content-21{
+    margin-left:10px;
+    min-height: 550px;
+}
+
+.glass-inner-content-21 img{
+    height: 550px;
+    padding: 10px 10px 10px 150px;
+}
+
+.glass-content-22{
+    margin-top: 10px;
+    width: 50%;
+    float: left;
+}
+
+.glass-inner-content-22{
+
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #ccc;
+
+    text-align: center;
+    padding-top: 225px;
+}
+
+/*************************************************************************************/
+/*************************************************************************************/
+/* JEWELLERY-HEADER*/
+.jewelleries-header{
+    margin: 10px;
+}
+
+.jewelleries-inner-header{
+    min-height: 100px;
+    background-color: #4f4f4f;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.jewelleries-inner-header h3{
+    color: #0099ff;
+}
+
+.jewelleries-inner-header p{
+    color: white;
+}
+/*============================================================================*/
+/* JEWELLERIES-CONTENT 11-12: */
+
+.jewelleries-content-11{
+    width: 45%;
+    float: left;
+}
+
+.jewelleries-inner-content-11{
+    margin-left:10px;
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #4f4f4f;
+
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.jewelleries-content-12{
+    width: 55%;
+    float:left;
+}
+
+.jewelleries-inner-content-12{
+    min-height: 550px;
+}
+
+.jewelleries-inner-content-12 img{
+    height: 550px;
+    padding: 10px;
+
+
+}
+
+/*======================================================*/
+/* JEWELLERIES-CONTENT 21-22: */
+#jewelleries{
+    background-color: #4f4f4f;
+}
+.jewelleries-content-21{
+    margin-top:10px;
+    width: 50%;
+    float:left;
+
+}
+
+.jewelleries-inner-content-21{
+    margin-left:10px;
+    min-height: 550px;
+}
+
+.jewelleries-inner-content-21 img{
+    height: 550px;
+    padding: 10px;
+
+}
+
+.jewelleries-content-22{
+    margin-top: 10px;
+    width: 50%;
+    float: left;
+}
+
+.jewelleries-inner-content-22{
+
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #ccc;
+
+    text-align: center;
+    padding-top: 225px;
+}
+
+/*************************************************************************************/
+/*************************************************************************************/
+/* TECHNOLOGIES-HEADER*/
+.technologies-header{
+    margin: 10px;
+}
+
+.technologies-inner-header{
+    min-height: 100px;
+    background-color: #4f4f4f;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.technologies-inner-header h3{
+    color: #0099ff;
+}
+
+.technologies-inner-header p{
+    color: white;
+}
+
+/*============================================================================*/
+/* TECHNOLOGIES-CONTENT 11-12: */
+
+.technologies-content-11{
+    width: 50%;
+    float: left;
+}
+
+.technologies-inner-content-11{
+    margin-left:10px;
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #4f4f4f;
+
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.technologies-content-12{
+    width: 50%;
+    float:left;
+}
+
+.technologies-inner-content-12{
+    min-height: 550px;
+}
+
+.technologies-inner-content-12 img{
+    height: 550px;
+    padding: 10px 10px 10px 140px;
+
+}
+
+/*======================================================*/
+/* TECHNOLOGIES-CONTENT 21-22: */
+#technologies1{
+    background-color: #4f4f4f;
+}
+.technologies-content-21{
+    margin-top:10px;
+    width: 50%;
+    float:left;
+
+}
+
+.technologies-inner-content-21{
+    margin-left:10px;
+    min-height: 550px;
+}
+
+.technologies-inner-content-21 img{
+    height: 550px;
+    padding: 10px 10px 10px 140px;
+}
+
+.technologies-content-22{
+    margin-top: 10px;
+    width: 50%;
+    float: left;
+}
+
+.technologies-inner-content-22{
+
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #ccc;
+
+    text-align: center;
+    padding-top: 225px;
+}
+
+/*=============================================================*/
+/* TECHNOLOGIES-CONTENT 31-32: */
+.technologies-content-31{
+    width: 50%;
+    float: left;
+}
+
+.technologies-inner-content-31{
+    margin-left:10px;
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #4f4f4f;
+
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.technologies-content-32{
+    width: 50%;
+    float:left;
+}
+
+.technologies-inner-content-32{
+    min-height: 550px;
+}
+
+.technologies-inner-content-32 img{
+    height: 550px;
+    padding: 10px 10px 10px 140px;
+
+}
+
+/*=========================================================*/
+/* TECHNOLOGIES-CONTENT 41-42: */
+
+#technologies2{
+    background-color: #4f4f4f;
+}
+.technologies-content-41{
+    margin-top:10px;
+    width: 50%;
+    float:left;
+
+}
+
+.technologies-inner-content-41{
+    margin-left:10px;
+    min-height: 550px;
+}
+
+.technologies-inner-content-41 img{
+    height: 550px;
+    padding: 10px 10px 10px 140px;
+}
+
+.technologies-content-42{
+    margin-top: 10px;
+    width: 50%;
+    float: left;
+}
+
+.technologies-inner-content-42{
+
+    min-height: 550px;
+
+    font-family: sans-serif;
+    color: #ccc;
+
+    text-align: center;
+    padding-top: 225px;
+}
+
