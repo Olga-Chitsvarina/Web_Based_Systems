@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <title>Art Portfolio</title>
-
-    <!--Link page to style sheet-->
     <link rel="stylesheet" type="text/css" href="StyleSheet.css">
 </head>
 
+
 <body>
-<!-- Wrap everthing into one class-->
+
 <div class="wrapper">
 
+    <!-- This container represents a header with logo and navigation bar -->
     <div class="header" >
         <div class="inner-header">
-            <img id="header-nav-logo" src="logo.png">
+            <a href="index.html"><img id="header-nav-logo" src="Pictures/logo.png"></a>
             <ul >
-                <li><a href="Main.html" >MAIN</a> </li>
+                <li><a href="index.html" >MAIN</a> </li>
                 <li><a href="Technologies.html">TECHNOLOGIES</a> </li>
                 <li><a href="Paintings.html">PAINTINGS</a> </li>
                 <li class="current"><a href="Glass.html">GLASS</a> </li>
@@ -29,11 +28,13 @@
         </div>
     </div>
 
+    <!-- This container briefly describes the current section of the web-site, it also has a table of contents with links
+    to each picture, listed in the table -->
     <div class="glass-header">
         <div class="glass-inner-header">
             <h3><strong>GLASS:</strong></h3>
             <p>This section contains pictures of glass, which I decorated. </p>
-            <h3>TABLE OF CONTENTS:</h3>
+            <h3><strong>TABLE OF CONTENTS</strong>:</h3>
             <table id="glass-table" border>
                 <tr class="table-header">
                     <th>Picture</th>
@@ -53,6 +54,7 @@
 
     <div class="row">
 
+        <!-- This container contains: 1) text on one side and 2) picture on the other side -->
         <div class="glass-content-11">
             <div class="glass-inner-content-11">
                 <div class="glass-inner-content-11-text">
@@ -63,11 +65,9 @@
             </div>
         </div>
 
-
-
         <div class="glass-content-12">
             <div class="glass-inner-content-12">
-                <img id="glass1" src="glass1.jpg">
+                <img id="glass1" src="Pictures/glass1.jpg">
             </div>
         </div>
 
@@ -75,12 +75,12 @@
 
     <div class="row" id="glass">
 
+        <!-- This container contains: 1) text on one side and 2) picture on the other side -->
         <div class="glass-content-21">
             <div class="glass-inner-content-21">
-                <img id="glass2" src="glass2.jpg">
+                <img id="glass2" src="Pictures/glass2.jpg">
             </div>
         </div>
-
 
         <div class="glass-content-22">
             <div class="glass-inner-content-22">
@@ -93,8 +93,7 @@
 
     </div>
 
-
-
+    <!--This container represents a footer with the copyright information -->
     <div class="footer">
         <div class="inner-footer">
             <div class="inner-footer-text">

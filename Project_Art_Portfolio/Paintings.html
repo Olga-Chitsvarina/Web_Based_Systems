@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<!-- This is page meta-data -->
 <head>
     <meta charset="UTF-8">
     <title>Art Portfolio</title>
-
-    <!--Link page to style sheet-->
     <link rel="stylesheet" type="text/css" href="StyleSheet.css">
 </head>
 
 <body>
-<!-- Wrap everthing into one class-->
+
 <div class="wrapper">
 
+    <!-- This container represents a header with logo and navigation bar -->
     <div class="header" >
         <div class="inner-header">
-            <img id="header-nav-logo" src="logo.png">
+            <a href="index.html"><img id="header-nav-logo" src="Pictures/logo.png"></a>
             <ul >
-                <li><a href="Main.html" >MAIN</a> </li>
+                <li><a href="index.html" >MAIN</a> </li>
                 <li><a href="Technologies.html">TECHNOLOGIES</a> </li>
                 <li class="current">
                     <a href="Paintings.html">PAINTINGS</a> </li>
@@ -29,11 +28,13 @@
         </div>
     </div>
 
+    <!-- This container briefly describes the current section of the web-site, it also has a table of contents with links
+    to each picture, listed in the table -->
     <div class="paintings-header">
         <div class="paintings-inner-header">
             <h3><strong>PAINTINGS:</strong></h3>
             <p>This section contains pictures, which I made using pen, pencils, aquarelle or oil paint. </p>
-            <h3>TABLE OF CONTENTS:</h3>
+            <h3><strong>TABLE OF CONTENTS</strong>:</h3>
             <table id="paintings-table" border>
                 <tr class="table-header">
                     <th>Picture</th>
@@ -51,6 +52,7 @@
         </div>
     </div>
 
+    <!-- This container contains: 1) text on one side and 2) picture on the other side -->
     <div class="row">
 
         <div class="paintings-content-11">
@@ -63,24 +65,22 @@
             </div>
         </div>
 
-
-
         <div class="paintings-content-12">
             <div class="paintings-inner-content-12">
-                <img id="dog" src="dog.jpg">
+                <img id="dog" src="./Pictures/dog.jpg">
             </div>
         </div>
 
     </div>
 
+    <!-- This container contains: 1) text on one side and 2) picture on the other side -->
     <div class="row" id="painting">
 
         <div class="paintings-content-21">
             <div class="paintings-inner-content-21">
-                <img id="landscape" src="landscape1.jpg">
+                <img id="landscape" src="./Pictures/landscape1.jpg">
             </div>
         </div>
-
 
         <div class="paintings-content-22">
             <div class="paintings-inner-content-22">
@@ -94,15 +94,15 @@
     </div>
 
 
-
+<!-- This is a page footer -->
     <div class="footer">
         <div class="inner-footer">
             <div class="inner-footer-text">
                 ©2018-Present Olga Chitsvarina. I do not allow the images on my website to be used on any other website, or for any other type of publication.
             </div>
         </div>
-
     </div>
+
 </div>
 
 </body>

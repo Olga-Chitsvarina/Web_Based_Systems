@@ -2,23 +2,24 @@
 <html lang="en">
 
 
+<!-- Page meta-data -->
 <head>
     <meta charset="UTF-8">
     <title>Art Portfolio</title>
-
-    <!--Link page to style sheet-->
     <link rel="stylesheet" type="text/css" href="StyleSheet.css">
 </head>
+
 
 <body>
 <!-- Wrap everthing into one class-->
 <div class="wrapper">
 
+    <!-- This is the header, which contains: logo, navigation bar, and visually shows which page is open -->
     <div class="header" >
         <div class="inner-header">
-            <img id="header-nav-logo" src="logo.png">
+            <a href="index.html"><img id="header-nav-logo" src="Pictures/logo.png"></a>
             <ul >
-                <li><a href="Main.html" >MAIN</a> </li>
+                <li><a href="index.html" >MAIN</a> </li>
                 <li class="current"><a href="Technologies.html">TECHNOLOGIES</a> </li>
                 <li><a href="Paintings.html">PAINTINGS</a> </li>
                 <li><a href="Glass.html">GLASS</a> </li>
@@ -27,11 +28,13 @@
         </div>
     </div>
 
+    <!-- This is a header for technologies section of the website, it briefly describes what the section it represents and
+     lists the table of contents, together with the links to each picture, mentioned in the table of contents-->
     <div class="technologies-header">
         <div class="technologies-inner-header">
             <h3><strong>TECHNOLOGIES:</strong></h3>
             <p>This section contains pictures which I created and generated using different technologies. </p>
-            <h3>TABLE OF CONTENTS:</h3>
+            <h3><strong>TABLE OF CONTENTS</strong>:</h3>
             <table border>
                 <tr class="table-header">
                     <th>Picture</th>
@@ -58,6 +61,7 @@
         </div>
     </div>
 
+    <!-- This container consists of two main parts: text and a picture on the other side -->
     <div class="row">
 
         <div class="technologies-content-11">
@@ -67,28 +71,24 @@
                     <strong>Tool</strong>: my Haskell program that uses recursion to generate pseudo-random “art” in a
                     Mondrian style.
                 </div>
-
             </div>
         </div>
-
-
 
         <div class="technologies-content-12">
             <div class="technologies-inner-content-12">
-                <img id="mondrian-style-art" src="mondrian.png">
+                <img id="mondrian-style-art" src="Pictures/mondrian.png">
             </div>
         </div>
-
     </div>
 
+    <!-- This container consists of two main parts: text and a picture on the other side -->
     <div class="row" id="technologies1">
 
         <div class="technologies-content-21">
             <div class="technologies-inner-content-21">
-                <img id="dragon" src="dragon.jpg">
+                <img id="dragon" src="./Pictures/dragon.jpg">
             </div>
         </div>
-
 
         <div class="technologies-content-22">
             <div class="technologies-inner-content-22">
@@ -98,9 +98,9 @@
                 </div>
             </div>
         </div>
-
     </div>
 
+    <!-- This container consists of two main parts: text and a picture on the other side -->
     <div class="row">
 
         <div class="technologies-content-31">
@@ -109,28 +109,25 @@
                     <strong><em>"Bear"</em> <br/></strong>
                     <strong>Tool</strong>: Inkscape - vector graphics editor.
                 </div>
-
             </div>
         </div>
 
-
-
         <div class="technologies-content-32">
             <div class="technologies-inner-content-32">
-                <img id="bear" src="bear.png">
+                <img id="bear" src="Pictures/bear.png">
             </div>
         </div>
 
     </div>
 
+    <!-- This container consists of two main parts: text and a picture on the other side -->
     <div class="row" id="technologies2">
 
         <div class="technologies-content-41">
             <div class="technologies-inner-content-41">
-                <img id="fox" src="fox.png">
+                <img id="fox" src="Pictures/fox.png">
             </div>
         </div>
-
 
         <div class="technologies-content-42">
             <div class="technologies-inner-content-42">
@@ -143,14 +140,15 @@
 
     </div>
 
+    <!-- This is a web-page footer with the copyright information-->
     <div class="footer">
         <div class="inner-footer">
             <div class="inner-footer-text">
                 ©2018-Present Olga Chitsvarina. I do not allow the images on my website to be used on any other website, or for any other type of publication.
             </div>
         </div>
-
     </div>
+
 </div>
 
 </body>
