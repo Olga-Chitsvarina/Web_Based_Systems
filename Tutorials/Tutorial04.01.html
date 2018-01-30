@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: blue;
+            /*flex-direction: row ;                 /* no change, horizontal */
+            /*flex-direction: column;               /* vertical view*/
+            /*flex-direction: column-reverse        /* reverse order, column*/
+            /*flex-wrap: wrap-reverse ;             /* if cannot fit, next row; swap the order by reversing*/
+
+            /*justify-content: center;              /* boxes align in the middle of the container*/
+            /*justify-content: flex-end;*/
+            /*justify-content: space-around ;         /* same space around boxes? like margin*/
+            /*justify-content: space-between;         /* space between the boxes only*/
+
+            height: 300px;
+            /*align-items: center*/                    /* in the middle vertically */
+
+            /*justify-content: center;                   /* MIDDLE OF THE CONTAINER, horizontal alignment
+            align-items: center;*/                      /* vertically alignment*/
+
+            /*flex-wrap: wrap;                          /*SPACE BETWEEN THE ROWS
+            align-content: space-between; */
+
+
+            /*flex-wrap: wrap;                          /* rows, add apace
+            align-content: space-around */
+        }
+
+        .flex-container-1{
+            display: flex;
+            background-color: blue;
+        }
+
+        .flex-container div{
+            padding: 50px 0;            /* top/bottom = 50, left/right=0, inside the box*/
+            width: 100px;
+            text-align: center;
+            background-color: lightskyblue;
+            margin: 10px;               /* space around the box, outside */
+        }
+
+
+        .flex-container-1 div{
+            padding: 50px 0;            /* top/bottom = 50, left/right=0, inside the box*/
+            width: 100px;
+            text-align: center;
+            background-color: deepskyblue;
+            margin: 10px;               /* space around the box, outside */
+        }
+    </style>
+
+</head>
+<body>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+
+        <!---flex-grow(size of elements is different),
+         flex-shrink: increase, then box gets smaller
+         flex-order
+         flex-basis - same as width, change width to flex-basis, still works
+         align-self: change only for this particular child, can override, ex: align-items: center for all children,-->
+
+        <div class="flex-container-1">              <!-- style applies only to first children -->
+            <div style="flex-grow: 1">1</div>
+            <div style="flex-grow: 1">2</div>
+            <div style="flex-grow: 1">3</div>
+        </div>
+</body>
+</html>
