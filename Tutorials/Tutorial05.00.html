@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script>
+        /*alert("Hello World");*/
+        src = "Tutorial05.01.js"
+    </script> -->
+    <style>
+        .myClass{
+           width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+    <body>
+    <!-- body region document.getElementById("element id").innerHTML = "Hello World"-->
+    <!-- Can be also included in the body
+    <script>
+        alert("Hello World");
+    </script> -->
+
+        <button type ="button" onclick = "alert('Hello World from button')">Click here</button>
+
+        <div id = "content"> Welcome </div>
+        <script>
+            document.getElementById('content').innerHTML = "Dynamically changed Welcome to this phrase"; /* dynamically change content*/
+        </script>
+
+        <div class = "myClass">1</div>
+        <div class = "myClass">2</div>
+        <div class = "myClass">3</div>
+        <script>
+            var x = document.getElementsByClassName("myClass");
+            for(var i = 0; i < x.length; i++){
+                x[i].style.backgroundColor = "red";
+            }
+        </script>
+
+        <script>
+            document.write("Print Message");
+            console.log("Message which will be displayed in the console");
+        </script>
+
+        <script>
+            var x,y;
+            x=5; y = 8;
+            console.log(x+y); /* addition */
+
+            /* x=5; y="8" x+y - concatenation
+             */
+        </script>
+
+        <!-- style.display = "none", "block" -hides, shows the element -->
+
+        <!-- ARRAY:
+            d.length - array length
+            can use push to push new item to the array-->
+
+
+
+    </body>
+</html>
