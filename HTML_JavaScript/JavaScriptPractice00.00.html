@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <!-- <script src="JavaScriptPractice00.01.js"></script> <!-- Connect to java script file-->
+</head>
+<body>
+    <script>
+
+        // Variables:-------------------------------------------------------------
+        var intNum = 50;
+        var floatNum = 5.5;
+        var boolean = true;
+        //alert(num);                               //Pop-up window
+
+        //console.log(boolean);
+
+        //var name = prompt("What is your name");   // Pop-up window, prompt
+        //console.log("Your name is: " + name);     // Console output
+
+        /*
+        document.write(intNum + floatNum + "<br>");                  // Arithmetic sum
+        document.write("Result is: " + intNum + floatNum + "<br>");  // String concatenation
+        document.write("Result is: ", intNum + floatNum + "<br>");   // Arithmetic sum and string concatenation*/
+
+        // Arrays:--------------------------------------------------------------------------------
+        /*var colors1 = ["R","G","B"];
+        var colors2 = new Array("R","G","B");
+        colors2[3]="W";
+        colors2.push("B");
+
+        document.write(colors2); */
+
+        // Functions:-----------------------------------------------------------------------------------
+        /*
+        function write (myString){
+            document.write(myString);
+        }
+
+        write("Hello!");*/
+
+        //Objects: --------------------------------------------------------------------------------------
+        /*
+        var person = {
+            name: "Helen",
+            age: 10,
+            occupation: "student",
+            address: {
+                street: "Main",
+                streetNumber: 1
+                },
+
+            printHello: function(){
+                document.write("Hello");},
+        }
+        //person.printHello();
+
+
+        var fruit = new Object();
+        fruit.color = "red";
+        //document.write(fruit.color);
+
+        fruit.fruitFunc = function(){
+            return fruit.color;
+        }
+
+        document.write(fruit.fruitFunc());
+
+        function Fruit (color){
+            this.color = color;
+        }
+
+        var myFruit = new Fruit("green");
+        document.write("<br>" + myFruit.color);*/
+
+    </script>
+
+    <!-- Simple events:---------------------------------------------------------------->
+    <p id="First-Paragraph">Some text</p>
+    <button onclick="changeColor('blue');">Blue</button>
+    <button onclick="changeColor('red');">Red</button>
+
+    <script>
+        function changeColor(colorNew){
+            var element = document.getElementById("First-Paragraph");
+            element.style.color = colorNew;
+        }
+    </script>
+
+
+</body>
+</html>
