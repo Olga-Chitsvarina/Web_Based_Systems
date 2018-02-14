@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Page</title>
+    <style>
+        .content{
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="content"></div>
+    <button type = "button" id = "showAction">Show</button>
+    <button type = "button" id = "hideAction">Hide</button>
+    <button type = "button" id = "growAction">Grow</button>
+    <button type = "button" id = "shrinkAction">Shrink</button>
+    <!--  JQuery: easier JavaScript  -->
+    <script src="JQuery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           /* $('#showAction').click(function(){
+                $('.content').show();
+            });
+
+            $('#hideAction').click(function(){
+                $('.content').hide();
+            });
+
+            $('.content').mouseleave(function(){
+                $('.content').css('height', '100px');
+            });
+
+            $('.content').mouseenter(function(){
+                $('.content').css('height', '200px');
+            });  */
+
+           /* $('#showAction').click(function(){
+                $('.content').fadeIn(6000);
+            });
+
+            $('#hideAction').click(function(){
+                $('.content').fadeOut(6000);
+            });*/
+
+            $('#showAction').click(function(){
+                $('.content').slideDown('slow');
+            });
+
+            $('#hideAction').click(function(){
+                $('.content').slideUp('slow');
+            });
+
+           /* $('.content').on({
+               mouseleave: function(){
+                   $('.content').css('height', '100px');
+               },
+
+                mouseenter: function(){
+                   $('.content').css('height', '200px');
+                }
+            });*/
+
+
+
+    });
+    </script>
+
+
+</body>
+</html>
