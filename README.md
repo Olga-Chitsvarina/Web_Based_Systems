@@ -1,5 +1,6 @@
-# Web_Based_Systems
+# WEB-BASED SYSTEMS
 
+# List of projects:
 Art Portfolio Website URL: 
 https://olga-chitsvarina.github.io/Web_Based_Systems/Project_Art_Portfolio/index.html
 
