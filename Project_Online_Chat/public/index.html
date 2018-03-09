@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--====================================================================================================================
+DOCUMENT METADATA:                                                                                                   -->
+
+<head>
+  <title>Socket.IO chat</title>                                 <!-- Define the title in the browser -->
+  <link rel="stylesheet" href="style.css">                      <!-- Link to an external style file -->
+  <meta name="viewport" content ="width=device-width, initial-scale=1">
+</head>
+
+
+<!--====================================================================================================================
+HEADER-->
+<body>
+
+<header><p>Your nickname is</p><p id="name-field-header"></p></header>
+
+
+<!--====================================================================================================================
+MAIN CONTENT -->
+<div id='main'>
+  <aside><ul id="online-users-list"></ul></aside>
+  <article><div id="article-content"><ul id="messages-list"></ul></div></article>
+</div>
+
+<!--====================================================================================================================
+FOOTER:
+- contains interactive field, where user can type in messages
+- action specifies URI where to send the messages,
+- button is used to submit the message to the web server
+- when messages are submitted, they are send to server
+- auto-complete turns off the form auto-completion
+- meaning that the user must explicitly enter the data-->
+<footer >
+  <form action="" id="footer">
+    <input id="messaging-field" autocomplete="off" />
+  </form>
+</footer>
+
+
+<!--====================================================================================================================
+SCRIPTS -->
+
+<!-- JQuery: -->
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+</script>
+<!-- Cookies -->
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+
+<!-- Socket -->
+<script src="/socket.io/socket.io.js"></script>
+
+
+<script src="/client.js"></script>
+
+</body>
+</html>
+
+<!--================================================================================================================-->
+
+
+
+
+
