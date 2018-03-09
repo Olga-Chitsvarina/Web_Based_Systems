@@ -1,4 +1,4 @@
-# chat-example
+# Online Chat
 
 This project is based on the following tutorial: https://socket.io/get-started/chat/
 
