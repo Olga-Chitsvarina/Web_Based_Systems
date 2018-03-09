@@ -6,6 +6,9 @@ To run the application:
 1) Install Node.js
 2) Open Node.js
 2) cd (path to project folder)
-3) node index
-4) Open your favourite browser
-5) Point your browser to http://localhost:30000
+3) npm install --save express@4.14.1
+4) npm install --save socket.io
+5) npm install js-cookie --save
+6) node index
+7) Open your favourite browser
+8) Point your browser to http://localhost:30000
