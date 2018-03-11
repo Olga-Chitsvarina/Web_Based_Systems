@@ -26,20 +26,20 @@
 
     var game = new Phaser.Game(config);
 
-    function preload ()
-    {
-        this.load.setBaseURL('http://labs.phaser.io');
+    function preload () {
 
-        this.load.image('sky', 'assets/skies/space3.png');
-        this.load.image('logo', 'assets/sprites/phaser3-logo.png');
-        this.load.image('red', 'assets/particles/red.png');
+
+        this.load.image('sky', 'http://labs.phaser.io/assets/skies/space3.png');
+        this.load.image('blue', 'http://labs.phaser.io/assets/particles/blue.png');
+        this.load.image('seng513', './seng513.png');
     }
+
 
     function create ()
     {
         this.add.image(400, 300, 'sky');
 
-        var particles = this.add.particles('red');
+        var particles = this.add.particles('blue');
 
         var emitter = particles.createEmitter({
             speed: 100,
@@ -47,7 +47,7 @@
             blendMode: 'ADD'
         });
 
-        var logo = this.physics.add.image(400, 100, 'logo');
+        var logo = this.physics.add.image(400, 100, 'seng513');
 
         logo.setVelocity(100, 200);
         logo.setBounce(1, 1);
@@ -55,7 +55,8 @@
 
         emitter.startFollow(logo);
     }
-</script>
+    </script>
+
 
 </body>
 </html>
