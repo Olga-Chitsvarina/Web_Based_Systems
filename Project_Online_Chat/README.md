@@ -2,7 +2,7 @@
 
 This project is based on the following tutorial: https://socket.io/get-started/chat/
 
-To run the application:
+To run the application and install the same modules which I used:
 1) Install Node.js
 2) Open Node.js
 2) cd (path to project folder)
