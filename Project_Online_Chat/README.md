@@ -12,3 +12,5 @@ To run the application and install the same modules which I used:
 6) node index
 7) Open your favourite browser
 8) Point your browser to http://localhost:30000
+
+Or just simply download all files, inludung modules
