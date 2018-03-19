@@ -5,16 +5,18 @@ This project is based on the following tutorial: https://socket.io/get-started/c
 To run the application and install the same modules which I used:
 1) Install Node.js
 2) Open Node.js
-2) cd (path to the project folder)
-3) npm install --save express@4.14.1
-4) npm install --save socket.io
-5) npm install js-cookie --save
-6) node index
-7) Open your favourite browser
-8) Point your browser to http://localhost:30000
+3) cd (path to the project folder)
+4) npm install --save express@4.14.1
+5) npm install --save socket.io
+6) npm install js-cookie --save
+7) node index
+8) Open your favourite browser
+9) Point your browser to http://localhost:30000
 
-You can also download all files, inludung node modules, then:
+You can also download all files, inludung node modules, and then:
 1) Install Node.js
 2) Open Node.js
 3) cd (path to the project folder)
 4) node index
+5) Open your favourite browser
+6) Point your browser to http://localhost:30000
