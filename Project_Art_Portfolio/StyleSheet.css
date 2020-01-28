@@ -20,6 +20,10 @@ a{
     padding: 20px;
 }
 
+a.blue{
+    color: #0099ff;
+}
+
 a:hover{
     color: #0099ff;
 }
